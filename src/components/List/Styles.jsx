@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styled from "styled-components";
 
 export const Table = () => {
   return (
@@ -18,9 +19,22 @@ export const Tr = () => {
     <tr></tr>
 };
 
+
+/*
 export const Th = () => {
-    <th className="text-start align-start rounded-b-sm"></th>
+    <th className="text-start align-start rounded-b-sm pb-4"></th>
 };
+*/
+
+// using styled to use style with props
+export const Th = styled.th`
+  text-align: start;
+  border-bottom: inset;
+  padding-bottom: 5px;
+  text-align: ${(props)  => (props.alignCenter ? "center" : "start")};
+  width: ${(props) => (props.width? props.width + "%" : "auto")};
+`;
+
 
 
 

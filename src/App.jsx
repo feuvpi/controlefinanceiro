@@ -3,6 +3,7 @@ import Global from './styles/global';
 import Header from './components/header/Header';
 import Summary from './components/Summary/Summary';
 import Form from './components/Form/Form';
+import List from './components/List/List';
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         <Header/>
         <Summary income={income} expense={expense} total={total}/>
         <Form handleAdd={handleAdd}/>
+        <List/>
       </div>
     </>
     

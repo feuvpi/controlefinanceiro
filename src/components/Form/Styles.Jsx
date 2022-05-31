@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     max-width: 1220px;
     margin: 20px auto;
-    width: 98%;
+    width: 91,6667%;
     box-shadow: 0px 0px 5px #ccc;
     display: flex;
     justify-content: space-around;
