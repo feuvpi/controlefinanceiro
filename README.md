@@ -1,3 +1,68 @@
+<h3 align="center">
+   :moneybag: Aplicação para gerenciamento de caixa
+</h3>
+
+## 🔖 Informações
+
+- Possibilita o controle de entradas e saídas de Caixa, utilizando localStorage para armazenamento dos dados.
+
+## 🖼 Screenshot das telas da aplicação
+
+<img src="docs/public/assets/demo.png" alt="">
+<br/>
+
+
+## 🚀 Tecnologias utilizadas 
+
+<br/>
+<p align="left">
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    alt="react"
+    width="120" height="120"/>
+  </a>
+
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+    alt="tailwindcss"
+    width="120" height="120"/>
+  </a>
+  
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+      alt="javascript"
+      width="120"
+      height="120"
+    />
+  </a>
+</p>
+
+
+### :memo: Backlog: 
+- Criar interface para visualização dos dados :heavy_check_mark:
+- Criar interface para inserção de dados :heavy_check_mark:
+- Criar regras do negocio para armazenamento dos dados no localStorage :heavy_check_mark:
+- Criar integração com banco de dados externo para persistência de dados
+- Criar funcionalidades de registro e autenticação de usuários
+
+# 👷 Como rodar
+
+```bash
+# Clonar o repositório:
+git clone https://github.com/feuvpi/controlefinanceiro.git
+
+# Entrar no diretório do projeto e realizar a instalação das dependências:
+npm install
+
+# Iniciar o modo de desenvolvimento:
+npm start
+
+```
+
+#########################################################
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
