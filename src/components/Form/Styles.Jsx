@@ -10,7 +10,7 @@ export const Container = styled.div`
     padding: 15px 0px;
     gap: 10px;
 
-    @media (max-width: 750px) {
+    @media (max-width: 1000px) {
         display: grid;
     }
 `;

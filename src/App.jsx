@@ -20,26 +20,34 @@ function App() {
   
   useEffect(() => {
     const expenseAmount = transactions.filter((item) => item.isExpense).map((transaction) => Number(transaction.amount));
-    const expenses = expenseAmount.reduce((acc, cur) => acc + cur, 0).toFixed(2);
+
 
 
     const incomeAmount = transactions.filter((item) => !item.isExpense).map((transaction) => Number(transaction.amount));
+
+    const expenses = expenseAmount.reduce((acc, cur) => acc + cur, 0).toFixed(2);
     const incomes = incomeAmount.reduce((acc, cur) => acc + cur, 0).toFixed(2);
 
     const total = Math.abs(incomes - expenses).toFixed(2);
 
+
+    console.log("income to be setted is: " + incomes)
+    console.log("expenses to be setted is " + expenses);
+
     setIncome(`R$ ${incomes}`);
     setExpense(`R$ ${expenses}`);
-    setTotal(`${Number(income) < Number(expense) ? "-" : ""}R$ ${total}`);
+    //console.log("expense: " + expenseAmount);
+    //console.log("income " + income);
+    setTotal(`${Number(incomes) < Number(expenses) ? "-" : ""}USD$ ${total}`);
 
-
-  }, [transactions])
+  }, [transactions]);
 
   const handleAdd = (transaction) => {
     const newArrayTransactions = [...transactions, transaction];
 
     setTransactions(newArrayTransactions);
     localStorage.setItem("transactions", JSON.stringify(newArrayTransactions));
+    
   }
 
 
