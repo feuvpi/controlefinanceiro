@@ -50,7 +50,7 @@ function App() {
         <Header/>
         <Summary income={income} expense={expense} total={total}/>
         <Form handleAdd={handleAdd}/>
-        <List/>
+        <List items={transactions} setItems={setTransactions}/>
       </div>
     </>
     
